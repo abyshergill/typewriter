@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mechanical Typist - Custom Workspace Edition</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="typewriter-container">
+        <div class="carriage">
+            <div class="carriage-knob left"></div>
+            <div class="carriage-knob right"></div>
+        </div>
+
+        <div class="paper-roll" id="paper">
+            <div class="text-container" id="text-target">Click "Start Session" to begin.</div>
+            <div class="blur-overlay" id="overlay">Click Start Session</div>
+        </div>
+
+        <div class="dashboard">
+            <div class="dashboard-row">
+                <div class="control-group">
+                    <div class="control-item">
+                        <label for="time-select">Duration</label>
+                        <select id="time-select">
+                            <option value="60">1 Minute</option>
+                            <option value="300">5 Minutes</option>
+                            <option value="600">10 Minutes</option>
+                        </select>
+                    </div>
+
+                    <div class="control-item">
+                        <label>Sound</label>
+                        <div class="toggle-container">
+                            <label class="switch">
+                                <input type="checkbox" id="sound-toggle" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="control-item">
+                        <label>Light Theme</label>
+                        <div class="toggle-container">
+                            <label class="switch">
+                                <input type="checkbox" id="theme-toggle">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button id="action-btn" style="margin-top: auto; height: 41px;">START SESSION</button>
+                </div>
+
+                <div class="stats-display">
+                    <div class="stat-box">
+                        <span class="stat-val" id="timer-val">00:00</span>
+                        <span class="stat-lbl">Time</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val" id="wpm-val">0</span>
+                        <span class="stat-lbl">WPM</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-val" id="accuracy-val">100%</span>
+                        <span class="stat-lbl">Accuracy</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="custom-text-section">
+                <label>Practice Source Material (Optional)</label>
+                <div class="custom-inputs-wrapper">
+                    <textarea id="custom-text-area" class="custom-textarea" placeholder="Paste custom practice text here or use the file picker to load a .txt file..."></textarea>
+                    <label for="file-picker" class="file-label">LOAD .TXT</label>
+                    <input type="file" id="file-picker" accept=".txt">
+                </div>
+            </div>
+        </div>
+
+        <div class="v-keyboard">
+            <div class="keyboard-row">
+                <div class="key" data-key="KeyQ">Q</div>
+                <div class="key" data-key="KeyW">W</div>
+                <div class="key" data-key="KeyE">E</div>
+                <div class="key" data-key="KeyR">R</div>
+                <div class="key" data-key="KeyT">T</div>
+                <div class="key" data-key="KeyY">Y</div>
+                <div class="key" data-key="KeyU">U</div>
+                <div class="key" data-key="KeyI">I</div>
+                <div class="key" data-key="KeyO">O</div>
+                <div class="key" data-key="KeyP">P</div>
+                <div class="key backspace" data-key="Backspace">Back</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key" data-key="KeyA">A</div>
+                <div class="key" data-key="KeyS">S</div>
+                <div class="key" data-key="KeyD">D</div>
+                <div class="key" data-key="KeyF">F</div>
+                <div class="key" data-key="KeyG">G</div>
+                <div class="key" data-key="KeyH">H</div>
+                <div class="key" data-key="KeyJ">J</div>
+                <div class="key" data-key="KeyK">K</div>
+                <div class="key" data-key="KeyL">L</div>
+                <div class="key" data-key="Semicolon">;</div>
+                <div class="key" data-key="Quote">'</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key" data-key="KeyZ">Z</div>
+                <div class="key" data-key="KeyX">X</div>
+                <div class="key" data-key="KeyC">C</div>
+                <div class="key" data-key="KeyV">V</div>
+                <div class="key" data-key="KeyB">B</div>
+                <div class="key" data-key="KeyN">N</div>
+                <div class="key" data-key="KeyM">M</div>
+                <div class="key" data-key="Comma">,</div>
+                <div class="key" data-key="Period">.</div>
+                <div class="key" data-key="Slash">/</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="key space" data-key="Space"></div>
+            </div>
+        </div>
+    </div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
