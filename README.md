@@ -8,13 +8,17 @@ A lightweight, customizable typing practice tool designed to help you improve sp
 
 ## 🚀 Features
 - **Start Session**: Begin a timed typing practice session instantly.
+
 ![Start](./assests/start.jpg)
 - **Session Duration**: Configure practice length (default: 1 minute).
+  
 ![duration](./assests/duration.jpg)
 - **Live Metrics**: Track Words Per Minute (WPM) and Accuracy in real time.
+  
 ![live matrix](./assests/live_matrix.jpg)
 - **Themes**: Switch between light and dark modes for comfort.
-![theme](./ssests/theme.jpg)
+  
+![theme](./assests/theme.jpg)
 - **Custom Practice Material**:
   - Paste your own text directly.
   - Load `.txt` files via the file picker.
